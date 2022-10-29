@@ -23,7 +23,9 @@
     "*://dawn.psim.us/*",
     "*://rom.psim.us/*",
     "*://smogtours.psim.us/*",
-    "*://sports.psim.us/*"
+    "*://sports.psim.us/*",
+    "*://play.pseudo.gq/*",
+    "*://pseudo.gq.psim.us/*"
   ],
 
   "host_permissions": [
