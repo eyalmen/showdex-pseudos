@@ -233,7 +233,6 @@ export const presetApi = pkmnApi.injectEndpoints({
       // since this is the workaround, we must manually fetch the data and transform the response
       // (not a big deal though... considering the hours I've spent pulling my hair out LOL)
       queryFn: async ({ gen, format, formatOnly }) => {
-        console.log("Line: 236")
         const response = await runtimeFetch([
           env('pkmn-presets-base-url'),
           env('pkmn-presets-gens-path'), // e.g., '/smogon/data/sets'
@@ -265,7 +264,6 @@ export const presetApi = pkmnApi.injectEndpoints({
 
     pokemonFormatStats: build.query<CalcdexPokemonPreset[], Omit<PkmnSmogonPresetRequest, 'formatOnly'>>({
       queryFn: async ({ gen, format }) => {
-        console.log("Line: 269\n\n\\n\n\n\n\\n\n\\n\n\\n\n\n\\n\\n\n\n\\n\n\\n\n")
         const response = await runtimeFetch<PkmnSmogonFormatStatsResponse>([
           env('pkmn-presets-base-url'),
           env('pkmn-presets-stats-path'), // e.g., '/smogon/data/stats'
@@ -301,7 +299,6 @@ export const presetApi = pkmnApi.injectEndpoints({
       // }),
 
       queryFn: async ({ gen, format }) => {
-        console.log("Line: 305\n\\n\n\n\n\\n\n\n\\n\n\\n\n\n\n\\n\n\n\\n")
         const response = await runtimeFetch<PkmnSmogonRandomsPresetResponse>([
           env('pkmn-presets-base-url'),
           env('pkmn-presets-randoms-path'), // e.g., '/randbats/data'
