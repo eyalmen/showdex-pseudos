@@ -85,7 +85,6 @@ const sendFetchMessage = async <T = unknown>(
   //   '\n', 'message', message,
   //   '\n', (response instanceof Error ? 'error' : 'response'), response,
   // );
-
   return {
     ok: response.ok,
     status: response.status,
@@ -110,6 +109,5 @@ export const runtimeFetch = async <T = unknown>(
     url,
     options,
   });
-
   return response;
 };

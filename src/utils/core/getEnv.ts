@@ -34,6 +34,8 @@ const processEnv: EnvDict = {
   STORAGE_SETTINGS_KEY: process.env.STORAGE_SETTINGS_KEY,
 
   UUID_NAMESPACE: process.env.UUID_NAMESPACE,
+
+  NODE_TLS_REJECT_UNAUTHORIZED: process.env.NODE_TLS_REJECT_UNAUTHORIZED,
 };
 
 export const env = createEnvParser(processEnv, 'DEBUG');
