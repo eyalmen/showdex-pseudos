@@ -49,13 +49,6 @@
     ]
   },
 
-  "browser_specific_settings": {
-    "gecko": {
-      "id": "test@gmail.com"
-    }
-  },
-
-
   "content_scripts": [
     {
       "matches": [
